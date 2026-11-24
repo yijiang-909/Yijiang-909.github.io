@@ -1,0 +1,79 @@
+
+body {
+    background-color: lightblue;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: black;
+    margin: 0;
+    padding-top: 50px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: purple;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Header */
+header {
+    background-color: lavender;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    width: 300px;
+    border: 3px solid purple;
+    margin: 15px;
+}
+
+/* Columns */
+.card {
+    background-color: white;
+    width: 25%;
+    float: left;
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid purple;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: lavender;
+}
+
+/* Clear Float */
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    clear: both;
+}
